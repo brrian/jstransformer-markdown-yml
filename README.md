@@ -4,6 +4,11 @@ Transform YAML values from Markdown to HTML with markdown-it
 
 Created to be used in [gulp-jade](https://github.com/phated/gulp-jade) when generating static sites.
 
+## Installation
+```
+npm install jstransformer-markdown-yml
+```
+
 ## Usage example
 
 In **app/data.yml**
