@@ -19,7 +19,7 @@
     "url": "https://github.com/brrian/jstransformer-markdown-yml/issues"
   },
   "homepage": "https://github.com/brrian/jstransformer-markdown-yml",
-  "devDependencies": {
+  "dependencies": {
     "markdown-it": "^4.4.0",
     "yamljs": "^0.2.3"
   }
