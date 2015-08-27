@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-markdown-yml",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transform YAML values from Markdown to HTML with markdown-it",
   "main": "index.js",
   "scripts": {

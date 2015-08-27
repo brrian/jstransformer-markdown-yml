@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   'C:\\Users\\Brian\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.4.1
+3 info using node@v0.10.36
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\Brian\\Desktop\\jstransformer-markdown-yml',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Brian\AppData\Roaming\npm-cache\jstransformer-markdown-yml\0.0.1\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\Brian\\AppData\\Roaming\\npm-cache\\jstransformer-markdown-yml\\0.0.1\\package.tgz',
+9 verbose tar pack   'C:\\Users\\Brian\\Desktop\\jstransformer-markdown-yml' ]
+10 verbose tarball C:\Users\Brian\AppData\Roaming\npm-cache\jstransformer-markdown-yml\0.0.1\package.tgz
+11 verbose folder C:\Users\Brian\Desktop\jstransformer-markdown-yml
+12 info prepublish jstransformer-markdown-yml@0.0.1
+13 verbose addLocalTarball adding from inside cache C:\Users\Brian\AppData\Roaming\npm-cache\jstransformer-markdown-yml\0.0.1\package.tgz
+14 silly cache afterAdd jstransformer-markdown-yml@0.0.1
+15 verbose afterAdd C:\Users\Brian\AppData\Roaming\npm-cache\jstransformer-markdown-yml\0.0.1\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\Brian\AppData\Roaming\npm-cache\jstransformer-markdown-yml\0.0.1\package\package.json written
+17 silly publish { name: 'jstransformer-markdown-yml',
+17 silly publish   version: '0.0.1',
+17 silly publish   description: 'Transform YAML values from Markdown to HTML with markdown-it',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'https://github.com/brrian/jstransformer-markdown-yml.git' },
+17 silly publish   keywords: [ 'jstransformer' ],
+17 silly publish   author: { name: 'Brian Wang', email: 'brrian@gmail.com' },
+17 silly publish   license: 'Unlicense',
+17 silly publish   bugs: { url: 'https://github.com/brrian/jstransformer-markdown-yml/issues' },
+17 silly publish   homepage: 'https://github.com/brrian/jstransformer-markdown-yml',
+17 silly publish   dependencies: { 'markdown-it': '^4.4.0', yamljs: '^0.2.3' },
+17 silly publish   readme: '# jstransformer-markdown-yml\r\n\r\nTransform YAML values from Markdown to HTML with markdown-it\r\n\r\nCreated to be used in [gulp-jade](https://github.com/phated/gulp-jade) when generating static sites.\r\n\r\n## Installation\r\n```\r\nnpm install jstransformer-markdown-yml\r\n```\r\n\r\n## Usage example\r\n\r\nIn **app/data.yml**\r\n```yaml\r\nfoo:\r\n  bar: ## Hello world\r\n```\r\n\r\nIn **.jade** file\r\n\r\nUse the format:\r\n`path to .yml file` , `object property (in dot notation)`\r\n\r\n```jade\r\n:markdown-yml\r\n  app/data, foo.bar\r\n```',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '6f6fd0d3ed84a44b7b2f489a36d6a294f253a333',
+17 silly publish   _id: 'jstransformer-markdown-yml@0.0.1',
+17 silly publish   _shasum: 'e20b7b6722aab4eea51c403d963861eed2ce4995',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name jstransformer-markdown-yml
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/jstransformer-markdown-yml
+22 verbose publish registryBase https://registry.npmjs.org/
+23 silly publish uploading C:\Users\Brian\AppData\Roaming\npm-cache\jstransformer-markdown-yml\0.0.1\package.tgz
+24 verbose request uri https://registry.npmjs.org/jstransformer-markdown-yml
+25 verbose request sending authorization for write operation
+26 info attempt registry request try #1 at 16:10:20
+27 verbose request using bearer token for auth
+28 verbose request id faddc23df33c7274
+29 http request PUT https://registry.npmjs.org/jstransformer-markdown-yml
+30 http 403 https://registry.npmjs.org/jstransformer-markdown-yml
+31 verbose headers { 'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   'content-length': '95',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Thu, 27 Aug 2015 08:10:22 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-nrt6129-NRT',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1440663021.263805,VS0,VE1299' }
+32 verbose request invalidating C:\Users\Brian\AppData\Roaming\npm-cache\registry.npmjs.org\jstransformer-markdown-yml on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : jstransformer-markdown-yml
+34 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\Brian\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:254:14)
+34 verbose stack     at Request._callback (C:\Users\Brian\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:178:14)
+34 verbose stack     at Request.self.callback (C:\Users\Brian\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:373:22)
+34 verbose stack     at Request.emit (events.js:98:17)
+34 verbose stack     at Request.<anonymous> (C:\Users\Brian\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1318:14)
+34 verbose stack     at Request.emit (events.js:117:20)
+34 verbose stack     at IncomingMessage.<anonymous> (C:\Users\Brian\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1266:12)
+34 verbose stack     at IncomingMessage.emit (events.js:117:20)
+34 verbose stack     at _stream_readable.js:944:16
+34 verbose stack     at process._tickCallback (node.js:442:13)
+35 verbose statusCode 403
+36 verbose pkgid jstransformer-markdown-yml
+37 verbose cwd C:\Users\Brian\Desktop\jstransformer-markdown-yml
+38 error Windows_NT 6.2.9200
+39 error argv "node" "C:\\Users\\Brian\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+40 error node v0.10.36
+41 error npm  v2.4.1
+42 error code E403
+43 error "You cannot publish over the previously published version 0.0.1." : jstransformer-markdown-yml
+44 error If you need help, you may report this error at:
+44 error     <http://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]
